@@ -15,100 +15,63 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:padding="@dimen/app_button_padding"
         android:text="@string/main_title"
         android:gravity="center"
+        android:onClick="showSnackBar"
         android:textAlignment="center"
-        android:textSize="30sp"
-        android:textColor="#000000"
+        android:textSize="@dimen/main_text_size"
+        android:textColor="@color/darkText"
         android:layout_alignParentTop="true"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/button_margin"
         android:layout_centerHorizontal="true"
         android:id="@+id/main_title" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#ffffff"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        style="@style/appButton"
         android:text="@string/app1_title"
-        android:background="@color/colorAccent"
         android:id="@+id/app1"
-        android:padding="@dimen/app_proj_padding"
         android:layout_below="@+id/main_title"
         android:layout_centerHorizontal="true"
          />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        style="@style/appButton"
+
         android:text="@string/app2_title"
         android:id="@+id/app2"
-        android:padding="@dimen/app_proj_padding"
-        android:background="@color/colorAccent"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:layout_below="@+id/app1"
-        android:layout_alignStart="@+id/app1" />
+        android:layout_alignStart="@+id/app1"
+        android:layout_alignLeft="@+id/app1" />
 
     <Button
-        android:layout_width="match_parent"
-        android:textColor="#fff"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        style="@style/appButton"
+
         android:text="@string/app3_title"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/colorPrimary"
         android:id="@+id/app3"
-        android:padding="@dimen/app_proj_padding"
         android:layout_below="@+id/app2"
         android:layout_alignStart="@+id/app2"
-        />
+        android:layout_alignLeft="@+id/app2" />
     <Button
-        android:layout_width="match_parent"
-        android:textColor="#fff"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        style="@style/appButton"
         android:text="@string/app4_title"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/colorPrimary"
         android:id="@+id/app4"
-        android:padding="@dimen/app_proj_padding"
         android:layout_below="@+id/app3"
         android:layout_alignStart="@+id/app3"
-        />
+        android:layout_alignLeft="@+id/app3" />
     <Button
-        android:layout_width="match_parent"
-        android:textColor="#fff"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        style="@style/appButton"
         android:text="@string/app5_title"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/colorPrimary"
         android:id="@+id/app5"
-        android:padding="@dimen/app_proj_padding"
         android:layout_below="@+id/app4"
         android:layout_alignStart="@+id/app4"
-        />
+        android:layout_alignLeft="@+id/app4" />
     <Button
-        android:layout_width="match_parent"
-        android:textColor="#fff"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        style="@style/appButton"
         android:text="@string/app6_title"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:id="@+id/app6"
-        android:padding="@dimen/app_proj_padding"
         android:layout_below="@+id/app5"
         android:layout_alignStart="@+id/app5"
-        />
+        android:layout_alignLeft="@+id/app5" />
 </RelativeLayout>
